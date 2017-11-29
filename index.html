@@ -2,31 +2,176 @@
 <html>
     <head>
         <title>Kristen</title>
-    </head>
-    <body>
-        
-        <div id="nav-bar">
-            <h3 id="logo">Kristen</h3>
-            <div id="menu">
-                <ul>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">projects</a></li>
-                    <li><a href="#">skills</a></li>
-                    <li><a href="#">contact</a></li>
-                </ul>
-            </div>
-            
-            <div id="left-banner"></div>
-            <div id="right-banner"></div>
-            <div id="pics"></div>
-            
-        
-        </div>
-        
-        
-        <h1>Portfolio Coming Soon!</h1>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <link href="style.css" rel="stylesheet" type="text/css">
+     </head>
     
-    </body>
+    <body>
+<!-- Navbar Start -->
+   
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+          <div class="container"> 
+          <a class="navbar-brand" href="#">Kristen</a>
+
+        <!--   button not working in Codepen??  Works in my browser through sublime.-->
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+         </div> <!-- end of nav container -->     
+        </nav> 
+
+        <!-----------------------------ADD SCROLLSPY ------------------------->  
+
+        <!-- Navbar End   -->
+
+        <!-- Jumbotron (banner) Start -->
+
+        <div class="jumbotron jumbotron-fluid mt-4">
+          <div class="container text-center">
+            <h1 class="display-5">I'm Kristen,</h1>
+            <hr>
+            <p class="lead">Web Development is my jam!</p>
+        <!--     <img src="" alt="pic of Kristen"> -->
+            <img class="rounded-circle w-25" src='https://s26.postimg.org/634i8f4ll/Full_Size_R.jpg' border='0' alt='Pic of me, Kristen!'/>
+          </div>
+        </div> 
+
+        <!-- about section??? or put it after banner???     -->
+        <!--     Banner end   -->
+
+        <!-- Portfolio Cards Start -->
+        <!-- bootstrap cards     -->
+        <div class="container mb-5">
+            <h3 id="portfolio">Portfolio:</h3>
+
+            <hr>
+        <!--   <h5 class="py-3 text-center">Bootstrap Projects</h5> -->
+
+        <div class="card-columns">
+          <div class="card">
+            <img class="card-img-top" src="https://i1.wp.com/psdboom.com/wp-content/uploads/2016/04/Dribbble-one.jpg?resize=800%2C600" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title text-center">Example of a Page to Recreate</h4>
+
+            </div>
+          </div>
+          <div class="card p-3">
+            <blockquote class="blockquote mb-0 card-body">
+              <p>Let us step into the night and pursue that flighty temptress, adventure.</p>
+              <footer class="blockquote-footer">
+                <small class="text-muted">
+                  Dumbledore <cite title="Source Title">Harry Potter</cite>
+                </small>
+              </footer>
+            </blockquote>
+          </div>
+
+          <div class="card">
+            <a href="https://codepen.io/Kmillie/full/PJNzvP/" target='_blank'><img class="card-img-top mb-5 pb-1" src="https://s26.postimg.org/k9ouhe4uh/Easy_Eats.jpg" alt="Card image cap"></a>
+          </div>
+
+         <div class="card bg-primary p-3 text-center">
+            <blockquote class="blockquote mb-0">
+              <p>Code, code, and keep coding!</p>
+              <footer class="blockquote-footer">
+                <small>
+                  Someone famous in <cite title="Source Title">Source Title</cite>
+                </small>
+              </footer>
+            </blockquote>
+          </div> 
+
+          <div class="card p-3 text-right">
+            <blockquote class="blockquote mb-0">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <footer class="blockquote-footer">
+                <small class="text-muted">
+                  Someone famous in <cite title="Source Title">Source Title</cite>
+                </small>
+              </footer>
+            </blockquote>
+          </div>
+           <div class="card">
+            <a href="https://codepen.io/Kmillie/full/yzNZXJ/" target='_blank'><img class="card-img-top" src="https://s26.postimg.org/svnio8rgp/jrobinson.jpg" alt="Card image cap"></a>
+          </div>
+        <div class="card">
+            <img class="card-img-top" src="http://expo.getbootstrap.com/screenshots/jdc-design-studio.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Bootstrap Example</h4>
+              <p class="card-text">This will be a template to recreate later.</p>
+             </div>
+           </div>   
+          </div>
+        </div>
 
 
+        <!-- Container End -->
+
+        <!--  Portfolio Cards End -->
+
+        <!-- SKills Start    -->
+        <div class="container mb-5">
+          <h3 id="skills">Skills:</h3>
+            <hr>
+              <img src="https://s26.postimg.org/oflhcoveh/skills.png" class="img-fluid" alt="Responsive image">
+        </div>    
+
+        <!-- SKills End     -->
+
+        <!--  Contact Start    -->
+
+        <div class="container mb-5">
+        <h3 id="contact" >Contact Info:</h3>  
+            <hr>  
+
+            <div class="d-flex flex-row justify-content-center social">
+              <div class="p-2"><a href="https://www.linkedin.com/in/kristen-spencer-53b9415a/" target='_blank'><i class="fa fa-linkedin" aria-hidden="true"></i></a></div>
+              <div class="p-2"><a href="https://www.instagram.com/spencer13_5/" target='_blank'><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+              <div class="p-2"><a href="https://www.freecodecamp.org/fccf879ef6d-693e-4e7d-b9a8-1fd8aad8790b" target='_blank'><i class="fa fa-free-code-camp" aria-hidden="true"></i></a></div>
+              <div class="p-2"><a href="https://codepen.io/Kmillie/" target='_blank'><i class="fa fa-codepen" aria-hidden="true"></i></a></div>
+            </div>
+
+        <!-- Contact End     -->
+
+        <!-- Footer Start     -->
+        <footer>
+          <div class="d-flex p-2 justify-content-center pt-4"><small>Coded by Kristen 2017</small></div>
+        </footer>
+
+
+
+        <!-- Footer End     -->
+
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>    
+    
+  </body> 
+  
+  
+  
+  
+
+    
+    
+    
 </html>
