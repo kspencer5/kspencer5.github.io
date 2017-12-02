@@ -80,6 +80,10 @@ a {
     height: 100%
 }
 
+ul {
+    list-style-type: none;
+}
+
 .qoutes {
     padding: 25px;
 }
@@ -91,9 +95,6 @@ a {
         
 }
 
-.hidden {
-    display: none;
-}
 
 /*About Section*/
 
@@ -107,6 +108,8 @@ a {
 .about-img {
     width: 35%;
     float: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 2%;
     
 }
 
@@ -130,6 +133,60 @@ a {
     font-size: 1.6em;
 }
 
+/*Work Section*/
+
+.work-container h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #132D4E;
+    margin-bottom: 30px;
+}
+
+.work-item img {
+    
+    opacity: .5;
+    display: block;
+    margin: auto;
+    width:60%;
+    
+}
+
+.work-item {
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+.work-title {
+    position: relative;
+    top: -200px;
+    left: 20px;
+}
+
+.work-link {
+    border: 1px solid black;
+    padding: 10px;
+    position: relative;
+    display: block;
+    width: 130px;
+    top: -190px;
+    left: 30px;
+    
+    z-index: 2;
+    text-align: center;
+}
+
+/*End Work Section*/
+
+/*Contact me*/
+
+/*End Contact me*/
+
+/*Footer*/
+
+.social-icons img {
+    width: 20px;
+}
 
 
 
