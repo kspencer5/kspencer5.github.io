@@ -4,6 +4,15 @@
     border: 0;
 }
 
+.main-nav {
+    background-color: #9DB1B4;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 10;
+}
+
 .banner {
     background-image: url(banner.1.jpg);
     background-repeat: no-repeat;
@@ -22,37 +31,45 @@ a {
     
 }
 
-.banner a {
+.main-nav a {
     color: #f6edd3
 }
 
-.banner h3, .banner ul li {
+.main-nav h3, .main-nav ul li {
     float: left;
     margin-top: 20px;
 }
 
-.banner h3 {
+.main-nav h3 {
     padding-left: 15px;
 }
 
-.banner ul {
+.main-nav ul {
     float: right;
 }
 
-.banner ul li {
+.main-nav ul li {
     list-style: none;
     padding-right: 15px;
 }
 
 .banner h1 {
-    text-align: center;
-    padding-top: 100px;
-    
+    text-align: left;
+    position: relative;
+    top: 275px;
+    left: 15px;
+    font-size: 2.5em;
+    z-index: 4;
+    line-height: 1;
+     text-shadow: 2px 2px 4px #000000;
 }
 
 .banner span {
-    color: #588E95;
-    font-size: 2em;
+    color: skyblue;
+    font-size: 2.5em;    
+    font-family: cursive;
+   
+        
 }
 
 
@@ -65,12 +82,16 @@ a {
 
 .journey-left {
     flex: 1;
+    
 }
 
 .journey-middle {
     flex: 2;
     background-color: #5D97D7;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-top: 20px;
+    opacity: .6;
+    z-index: 1;
     
 }
 .journey-right {
@@ -78,10 +99,13 @@ a {
 }
 
 .journey img {
-    width: 100%;
-    height: 100%;
-     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        
+    width: 110%;
+    height: 120%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+    top: -20px;
+    z-index: 2;
+    
 }
 
 ul {
