@@ -92,6 +92,7 @@ a {
 /*Card section*/
 .front h2 {
             text-align: center;
+            padding-top: 20px;
         }
 .back p {
             padding: 50px 10px 50px 10px;
@@ -213,6 +214,8 @@ footer p{
         width: 1080px;
         margin: 0 auto;
     }
+    
+
     
     
     .flip {
