@@ -101,12 +101,23 @@ a {
 
 
 /*About Card front*/
+.about-img img {
+    width: 100%;
+    height: 100%;
+    
+}
 
+.about-img {
+    width: 90%;
+    height: 80%;
+    margin: 0 auto;
+    margin-top: 20px
+}
 
 .flip {
             width: 85%;
-            height: 350px;
-            
+            height: 450px;
+            font-size: .6em;
             font-family: 'Rock Salt', cursive;
             
         }
@@ -116,7 +127,7 @@ a {
     transform: perspective(600px) rotateY(0deg);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 85%;
-    height: 300px;
+    height: 400px;
     border-radius: 7px;
     backface-visibility: hidden;
     transition: transform .5s linear 0s;
@@ -128,7 +139,7 @@ a {
     transform: perspective(600px) rotateY(180deg);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 85%;
-    height: 300px;
+    height: 400px;
     border-radius: 7px;
     backface-visibility: hidden;
     transition: transform .5s linear 0s;
@@ -206,7 +217,7 @@ footer p{
     
     .flip {
             width: 85%;
-            height: 350px;
+            height: 650px;
             
             font-family: 'Rock Salt', cursive;
             
@@ -217,7 +228,7 @@ footer p{
     transform: perspective(600px) rotateX(0deg);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 1080px;
-    height: 300px;
+    height: 600px;
     border-radius: 7px;
     backface-visibility: hidden;
     transition: transform .5s linear 0s;
@@ -229,7 +240,7 @@ footer p{
     transform: perspective(600px) rotateX(180deg);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width:1080px;
-    height: 300px;
+    height: 600px;
     border-radius: 7px;
     backface-visibility: hidden;
     transition: transform .5s linear 0s;
