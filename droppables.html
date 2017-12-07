@@ -7,21 +7,38 @@
     
     <style type="text/css">
         
-        .box1 {
-            background-color: red;
-            width: 50px;
-            height: 50px;
-            
+        #sport-pics div, #sport-words div{
+            float: left
         }
         
-        .box2 {
-            background-color: blue;
-            width: 50px;
-            height: 50px;
+        #sport-pics:after {
+            clear: both;
+            content: "";
+            display: block;
         }
+
         
         div {
-            margin: 50px;
+            margin: 15px;
+            border: 4px solid black;
+            width: 150px;
+            height: 150px;
+            text-align: center;
+            background: white;
+            
+                
+        }
+        
+        img {
+            width: 100px;
+            padding-top: 14px;
+           
+        }
+        
+        #sport-words p {
+            margin-top: 115px;
+            font-weight: bold;
+            font-size: 1.5em;
         }
     
     </style>
@@ -29,23 +46,118 @@
 </head>
 <body>
     
-    <div class="box1"></div>
-    <div class="box2"></div>
+    <section id="sport-pics">
+        
+        <div class="baseball"><img src="http://moziru.com/images/baseball-clipart-transparent-background-4.png" alt="baseball"></div>
+        <div  class="football"><img src="https://openclipart.org/download/102853/1293842064.svg" alt="football"></div>
+        
+        <div class="basketball"><img src="http://clipartix.com/wp-content/uploads/2017/06/Basketball-clipart-free-images.png" alt="basketball"></div>
+        <div class="soccer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Emojione_BW_26BD.svg/1024px-Emojione_BW_26BD.svg.png" alt="soccer ball"></div>
+        
+        
+        <div class="tennis"><img src="http://moziru.com/images/tennis-ball-clipart-transparent-15.png" alt="tennis ball"></div>
+        <div  class="golf"><img class="golf-img" src="http://www.clker.com/cliparts/1/d/8/c/1333905510134784234400px-golf_ball_svg-hi.png" alt="golf ball"></div>
+    </section>
+    
+    <section id="sport-words">
+        <div data-value="golf" class="golf-word"><p>Golf</p></div>
+        <div data-value="football" class="football-word"><p>Football</p></div>
+        <div data-value="soccer" class="soccer-word"><p>Soccer</p></div>
+        <div data-value="basketball" class="basketball-word"><p>Basketball</p></div>
+        <div data-value="baseball" class="baseball-word"><p>Baseball</p></div>
+        <div data-value="tennis" class="tennis-word"><p>Tennis</p></div>
+    </section>
     
     
 
 <script type="text/javascript">
-   
+    
     $(function() {
-        $(".box2").draggable();
-        $(".box1").droppable({drop: function(event, ui){
+        $(".golf-word").draggable();
+        $(".golf").droppable({
+            accept: 'div[data-value="golf"]',
+            drop: function(event, ui){
             
-            alert("congrats");
+                $(".golf-word").css("display", "none");
+                $(".golf").append("<p>Golf</p>");
+                $(".golf").css("background", "green");
+                
+                
             
         }});
         
+    });
+    
+    $(function() {
+        $(".football-word").draggable();
+        $(".football").droppable({
+            accept: 'div[data-value="football"]',
+            drop: function(event, ui){
+            
+                $(".football-word").css("display", "none");
+                $(".football").append("<p>football</p>");
+                $(".football").css("background", "green");
+            
+        }});
         
     });
+    
+    $(function() {
+        $(".soccer-word").draggable();
+        $(".soccer").droppable({
+            accept: 'div[data-value="soccer"]',
+            drop: function(event, ui){
+            
+                $(".soccer-word").css("display", "none");
+                $(".soccer").append("<p>soccer</p>");
+                $(".soccer").css("background", "green");
+            
+        }});
+        
+    });
+   
+    $(function() {
+        $(".basketball-word").draggable();
+        $(".basketball").droppable({
+            accept: 'div[data-value="basketball"]',
+            drop: function(event, ui){
+            
+                $(".basketball-word").css("display", "none");
+                $(".basketball").append("<p>basketball</p>");
+                $(".basketball").css("background", "green");
+            
+        }});
+        
+    });
+    
+    $(function() {
+        $(".baseball-word").draggable();
+        $(".baseball").droppable({
+            accept: 'div[data-value="baseball"]',
+            drop: function(event, ui){
+            
+                $(".baseball-word").css("display", "none");
+                $(".baseball").append("<p>baseball</p>");
+                $(".baseball").css("background", "green");
+            
+        }});
+        
+    });
+    
+    $(function() {
+        $(".tennis-word").draggable();
+        $(".tennis").droppable({
+            accept: 'div[data-value="tennis"]',
+            drop: function(event, ui){
+            
+                $(".tennis-word").css("display", "none");
+                $(".tennis").append("<p>tennis</p>");
+                $(".tennis").css("background", "green");
+            
+        }});
+        
+    });
+
     
 </script> 
     
