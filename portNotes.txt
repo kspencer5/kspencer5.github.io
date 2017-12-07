@@ -1,0 +1,24 @@
+
+Fonts:
+
+Cards:
+<link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+
+font-family: 'Rock Salt', cursive;
+
+Heading and Navigations:
+
+<link href="https://fonts.googleapis.com/css?family=Nunito:600i" rel="stylesheet">
+
+font-family: 'Nunito', sans-serif;
+
+
+
+Color Scheme
+
+	Sky #CAEBF2
+	Carbon #A9A9A9
+	Watermelon #FF3B3F
+	Neutral #EFEFEF
+
+
