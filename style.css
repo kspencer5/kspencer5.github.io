@@ -154,17 +154,15 @@ a {
     transform: perspective(600px) rotateY( 0deg);
 }
 
-.port-card {
-    width: 100px;
-    height: 100px;
-    background: blue;
-    float: left;
-    margin: 12px;
-}
+
 
 /*Work Card*/
 
-
+.back a img {
+    width: 200px;
+    margin: 15px;
+    
+}
 
 /*End Work Section*/
 
