@@ -1,0 +1,85 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title>To Do List</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="jquery.ui.touch-punch.min.js"></script>
+    
+    <style type="text/css">
+        
+        #container {
+            width: 300px;
+            border: 4px solid gray;
+        }
+        
+        h2 {
+            text-align: center;
+        }
+        
+        #item {
+            padding: 5px;
+            margin-left: 30px;
+            border-radius: 4px;
+            vertical-align: bottom;
+                
+            
+        }
+        
+        button {
+            padding: 5px 15px;
+            text-align: center;
+            margin-bottom: 2px;
+            border-radius: 4px;
+            background-color: lightseagreen;
+        }
+        
+      
+    
+    </style>
+    
+</head>
+<body>
+    
+    <div id="container">
+        <h2>To Do List</h2>
+        <input id="item" type="text">
+        <button type="submit">Add</button>
+        
+        <ol id="items">
+            
+        </ol>
+        
+        
+    
+    </div>
+    
+<script type="text/javascript">
+    
+    
+    
+    $(function() {
+        
+        
+       
+        $("button").click(function() {
+            var input = $("#item").val();
+            $("#items").sortable();
+            $("#items").append('<li><input type="checkbox">' + input + '</li>');
+            $('#item').val('');
+                   
+            
+        });
+        
+        
+       $('#items').click(function() {
+           $("#items input:checkbox:checked").closest('li').remove();
+           
+});
+        
+    });
+    
+</script>    
+</body>    
+
+</html>
