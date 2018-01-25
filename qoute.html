@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Quote!</title>
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            border: 0;
+            padding: 0;
+        }
+        
+        #box {
+            width: 550px;
+            height: 350px;
+            margin: 0 auto;
+            margin-top: 15%;
+            background: teal;
+            border: 2px solid black;
+        }
+        
+        #button {
+            width: 125px;
+            height: 25px;
+            border-radius: 5px;
+            margin-top: 50px;
+            margin-left: 40%;
+            
+        }
+    
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="box"></div>
+        <button id="button" type="submit">Get Quote!</button>
+    </div>
+    
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#search").on("click", function(){
+    var searchVal = $("#searchBox").val();
+    var url = "https://en.wikipedia.org/w/api.php?action=opensearch&search=" + searchVal + "&format=json&callback=?";
+    
+   $.getJSON(url, function(data){
+     $("#info").html("");
+     for(var i = 0; i < data[1].length; i++){
+       $("#info").prepend('<div><div class="well"><a href=' + data[3][i] + '<h3>' + data[1][i] + '</h3><p>' + data[2][i] +'</p></a></div></div>');
+     }
+ });
+    
+       $("#searchBox").val("");  
+      });
+
+      $("#searchBox").keypress(function(e){
+        if(e.which==13){
+          $("#search").click();
+        }
+      });
+    
+  
+    });
+});
+</script>    
+    
+</body>
+
+</html>
